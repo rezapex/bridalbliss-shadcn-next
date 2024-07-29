@@ -37,3 +37,4 @@ tsconfig.tsbuildinfo
 
 # Ignore components bin directory
 .components-bin-ignored/*
+.aider*
