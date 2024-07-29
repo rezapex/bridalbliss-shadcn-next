@@ -1,0 +1,1 @@
+can we ensure tailwind colors are properly applied and not conflicting with others. because the hero text in hero.tsx is blending into the background in light mode, but its fine in dark mode.

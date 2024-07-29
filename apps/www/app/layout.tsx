@@ -20,19 +20,23 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
   keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
+    "Wedding Planning",
+    "Bridal Services",
+    "Wedding Coordination",
+    "Luxury Weddings",
+    "Destination Weddings",
+    "Bridal Bliss",
+    "AI Wedding Planning",
+    "Wedding Vendors in my area",
+    "Best Wedding Vendors in my area"
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "bridalbliss",
+      url: "https://bridalbliss.org",
     },
   ],
-  creator: "shadcn",
+  creator: "bridalbliss",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -54,7 +58,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@shadcn",
+    creator: "@bridalblissed",
   },
   icons: {
     icon: "/favicon.ico",
