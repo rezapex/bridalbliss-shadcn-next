@@ -23,6 +23,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^17.8.1
         version: 17.8.1
+      '@emotion/is-prop-valid':
+        specifier: ^0.8.8
+        version: 0.8.8
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^3.7.2
         version: 3.7.2(prettier@2.8.8)
@@ -59,6 +62,9 @@ importers:
       eslint-plugin-tailwindcss:
         specifier: 3.13.1
         version: 3.13.1(tailwindcss@3.3.7(ts-node@10.9.2(@types/node@20.14.13)(typescript@5.5.4)))
+      framer-motion:
+        specifier: ^11.0.24
+        version: 11.0.24(@emotion/is-prop-valid@0.8.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       postcss:
         specifier: ^8.4.40
         version: 8.4.40
@@ -102,6 +108,9 @@ importers:
 
   apps/www:
     dependencies:
+      '@emotion/is-prop-valid':
+        specifier: ^0.8.8
+        version: 0.8.8
       '@faker-js/faker':
         specifier: ^8.2.0
         version: 8.2.0
@@ -230,7 +239,7 @@ importers:
         version: 8.0.0-rc15(react@18.2.0)
       framer-motion:
         specifier: ^11.0.24
-        version: 11.0.24(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 11.0.24(@emotion/is-prop-valid@0.8.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       geist:
         specifier: ^1.2.2
         version: 1.2.2(next@14.3.0-canary.43(@babel/core@7.24.9)(@opentelemetry/api@1.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
@@ -961,6 +970,12 @@ packages:
 
   '@emnapi/runtime@1.2.0':
     resolution: {integrity: sha512-bV21/9LQmcQeCPEg3BDFtvwL6cwiTMksYNWQQ4KOxCZikEGalWtenoZ0wCiukJINlGCIi2KXx01g4FoH/LxpzQ==}
+
+  '@emotion/is-prop-valid@0.8.8':
+    resolution: {integrity: sha512-u5WtneEAr5IDG2Wv65yhunPSMLIpuKsbuOktRojfrEiEvRyC85LgPMZI63cr7NUqT8ZIGdSVg8ZKGxIug4lXcA==}
+
+  '@emotion/memoize@0.7.4':
+    resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
 
   '@esbuild-plugins/node-resolve@0.2.2':
     resolution: {integrity: sha512-+t5FdX3ATQlb53UFDBRb4nqjYBz492bIrnVWvpQHpzZlu9BQL5HasMZhqc409ygUwOWCXZhrWr6NyZ6T6Y+cxw==}
@@ -7843,7 +7858,7 @@ snapshots:
       '@types/node': 20.5.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.5.4)
-      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@5.5.4))(ts-node@10.9.2(@types/node@20.5.1)(typescript@5.5.4))(typescript@5.5.4)
+      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@5.5.4))(ts-node@10.9.2(@types/node@20.14.13)(typescript@5.5.4))(typescript@5.5.4)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -8020,6 +8035,12 @@ snapshots:
     dependencies:
       tslib: 2.6.3
     optional: true
+
+  '@emotion/is-prop-valid@0.8.8':
+    dependencies:
+      '@emotion/memoize': 0.7.4
+
+  '@emotion/memoize@0.7.4': {}
 
   '@esbuild-plugins/node-resolve@0.2.2(esbuild@0.17.19)':
     dependencies:
@@ -10684,7 +10705,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@5.5.4))(ts-node@10.9.2(@types/node@20.5.1)(typescript@5.5.4))(typescript@5.5.4):
+  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@5.5.4))(ts-node@10.9.2(@types/node@20.14.13)(typescript@5.5.4))(typescript@5.5.4):
     dependencies:
       '@types/node': 20.5.1
       cosmiconfig: 8.3.6(typescript@5.5.4)
@@ -11733,10 +11754,11 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  framer-motion@11.0.24(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  framer-motion@11.0.24(@emotion/is-prop-valid@0.8.8)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       tslib: 2.6.2
     optionalDependencies:
+      '@emotion/is-prop-valid': 0.8.8
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
