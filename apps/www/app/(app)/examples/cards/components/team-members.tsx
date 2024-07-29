@@ -27,6 +27,8 @@ import {
   PopoverTrigger,
 } from "@/registry/new-york/ui/popover"
 
+import { ReactNode } from "react"
+
 const roles = [
   { name: "Viewer", description: "Can view and comment." },
   { name: "Developer", description: "Can view, comment and edit." },
@@ -34,7 +36,14 @@ const roles = [
   { name: "Owner", description: "Admin-level access to all resources." },
 ]
 
-const TeamMember = ({ name, email, avatar, role }) => (
+interface TeamMemberProps {
+  name: string
+  email: string
+  avatar: string
+  role: string
+}
+
+const TeamMember = ({ name, email, avatar, role }: TeamMemberProps) => (
   <div className="flex items-center justify-between space-x-4">
     <div className="flex items-center space-x-4">
       <Avatar>
@@ -60,8 +69,8 @@ const TeamMember = ({ name, email, avatar, role }) => (
             {roles.length === 0 && <CommandEmpty>No roles found.</CommandEmpty>}
             <CommandGroup>
               {roles.map((r) => (
-                <CommandItem key={r.name}>
-                  <div className="flex flex-col items-start px-4 py-2">
+                <CommandItem key={r.name} onSelect={() => {}}>
+                  <div className="flex flex-col items-start">
                     <p>{r.name}</p>
                     <p className="text-sm text-muted-foreground">
                       {r.description}
@@ -97,7 +106,7 @@ export function DemoTeamMembers() {
           name="Jackson Lee"
           email="p@example.com"
           avatar="/avatars/02.png"
-          role="Member"
+          role="Developer"
         />
       </CardContent>
     </Card>
