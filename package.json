@@ -14,7 +14,7 @@
     "templates/*"
   ],
   "scripts": {
-    "build": "pnpm next build",
+    "build": "pnpm run next build",
     "build:cli": "turbo --filter=shadcn-ui build",
     "build:registry": "pnpm --filter=www build:registry && pnpm format:write",
     "dev": "next dev",
