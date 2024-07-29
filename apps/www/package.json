@@ -60,6 +60,7 @@
     "date-fns": "^2.30.0",
     "embla-carousel-autoplay": "8.0.0-rc15",
     "embla-carousel-react": "8.0.0-rc15",
+    "@emotion/is-prop-valid": "^0.8.8",
     "framer-motion": "^11.0.24",
     "geist": "^1.2.2",
     "input-otp": "^1.2.2",
