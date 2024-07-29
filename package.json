@@ -14,7 +14,7 @@
     "templates/*"
   ],
   "scripts": {
-    "build": "next build",
+    "build": "pnpm next build",
     "build:cli": "turbo --filter=shadcn-ui build",
     "build:registry": "pnpm --filter=www build:registry && pnpm format:write",
     "dev": "next dev",
@@ -38,6 +38,7 @@
   },
   "packageManager": "pnpm@9.0.6",
   "dependencies": {
+    "next": "^13.3.0",
     "@babel/core": "^7.24.9",
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.27.7",
